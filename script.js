@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Make a request to the backend API
-      const response = await fetch(`${API_URL}?location=${encodeURIComponent(location)}&crop=${encodeURIComponent(crop)}`);
+      const response = await fetch(`https://cropzy-backend-3.onrender.com/insights?location=${encodeURIComponent(location)}&crop=${encodeURIComponent(crop)}`);
 
       if (!response.ok) {
         throw new Error("Failed to fetch insights");
