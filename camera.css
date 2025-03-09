@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background: rgb(101, 136, 101);
+
+
+}
+
+h1 {
+    color:white;
+}
+
+h2 {
+    color: white;
+    align-items: center;
+}
+
+input[type="file"] {
+    margin-top: 10px;
+}
+
+video {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+}
+
+canvas {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    background: rgb(101, 136, 101);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result h3 {
+    margin: 0;
+}
+
+#result p {
+    font-size: 14px;
+    color: #555;
+}
+#cameraFeed{
+    align-items: center;
+}
+

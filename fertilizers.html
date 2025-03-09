@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fertilizers</title>
+    <link rel="stylesheet" href="crop.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>BUY ORGANIC PRODUCTS</h1>
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Strawberry product -->
+        <div class="product">
+            <img src="cropimages/moneyplant.jpg" alt="moneyplant">
+            <div class="product-info">
+                <h2>Moneyplant</h2>
+                <p>Price: $5.99 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Fresh Strawberries')">+ Add to Cart</button>
+        </div>
+
+        <!-- Orange product -->
+        <div class="product">
+            <img src="cropimages/neempowder.webp" alt="neempowder">
+            <div class="product-info">
+                <h2>Neempowder</h2>
+                <p>Price: $4.49 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Juicy Oranges')">+ Add to Cart</button>
+        </div>
+
+        <!-- Cranberry product -->
+        <div class="product">
+            <img src="cropimages/fertilizers 3.webp" alt="fertilizers">
+            <div class="product-info">
+                <h2>Black Pearl</h2>
+                <p>Price: $6.99 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Organic Cranberries')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Corn Seeds product -->
+        <div class="product">
+            <img src="cropimages/flowerddrop.jpg" alt="flowerddrop">
+            <div class="product-info">
+                <h2>Flower Drop</h2>
+                <p>Price: $3.99 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Corn Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Tomato Seeds product -->
+        <div class="product">
+            <img src="cropimages/greendrop.jpg" alt="greendrop">
+            <div class="product-info">
+                <h2>Greendrop</h2>
+                <p>Price: $2.99 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Tomato Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Lettuce Seeds product -->
+        <div class="product">
+            <img src="cropimages/seedstarter.jpg" alt="seedstarter">
+            <div class="product-info">
+                <h2>seedstarter</h2>
+                <p>Price: $3.49 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Lettuce Seeds')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal" style="display: none;">
+        <h3>Your Cart</h3>
+        <ul id="cart-items-modal">
+            <!-- Cart items will be added here -->
+        </ul>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+
+    <script src="crop.js"></script>
+</body>
+</html>

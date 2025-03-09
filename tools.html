@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOOLS</title>
+    <link rel="stylesheet" href="crop.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>BUY AGRICULTURAL TOOLS</h1>
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Strawberry product -->
+        <div class="product">
+            <img src="cropimages/cultivator.webp" alt="cultivator">
+            <div class="product-info">
+                <h2>cultivator</h2>
+                <p>Price: $5.99 </p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Fresh Strawberries')">+ Add to Cart</button>
+        </div>
+
+        <!-- Orange product -->
+        <div class="product">
+            <img src="cropimages/powerReaper.webp" alt="powerReaper">
+            <div class="product-info">
+                <h2>powerReaper</h2>
+                <p>Price: $4.49 </p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Juicy Oranges')">+ Add to Cart</button>
+        </div>
+
+        <!-- Cranberry product -->
+        <div class="product">
+            <img src="cropimages/tools1.jpg" alt="Mixer">
+            <div class="product-info">
+                <h2>Mixer</h2>
+                <p>Price: $6.99 </p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Organic Cranberries')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Corn Seeds product -->
+        <div class="product">
+            <img src="cropimages/tools2.jpg" alt="Cutter">
+            <div class="product-info">
+                <h2>Cutter</h2>
+                <p>Price: $3.99</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Corn Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Tomato Seeds product -->
+        <div class="product">
+            <img src="cropimages/tools3.webp" alt="Plough">
+            <div class="product-info">
+                <h2>Plough</h2>
+                <p>Price: $2.99</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Tomato Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Lettuce Seeds product -->
+        <div class="product">
+            <img src="cropimages/powerweeder.webp" alt="powerweeder">
+            <div class="product-info">
+                <h2>powerweeder</h2>
+                <p>Price: $3.49</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Lettuce Seeds')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal" style="display: none;">
+        <h3>Your Cart</h3>
+        <ul id="cart-items-modal">
+            <!-- Cart items will be added here -->
+        </ul>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+
+    <script src="crop.js"></script>
+</body>
+</html>

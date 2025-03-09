@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cropzy</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Empowering Farmers with Data-Driven Insights</h1>
+        <nav class="auth-buttons">
+            <a href="login.html" class="auth-button">
+                <span class="symbol">🔒</span>Login
+            </a>
+            <a href="register.html" class="auth-button">
+                <span class="symbol">📝</span> Signup
+            </a>
+            <a href="menu.html" class="auth-button">
+              <span class="symbol">☰</span> Menu
+          </a>
+            
+            
+        </nav>
+    </header>
+    
+    <section id="content">
+        <form id="farmer-form">
+            <label for="location">Location:</label>
+            <input type="text" id="location" placeholder="Enter location" required />
+            <label for="crop">Crop:</label>
+            <select id="crop">
+                <option value="rice">Rice</option>
+                <option value="wheat">Wheat</option>
+                <option value="maize">Maize</option>
+                <option value="soybeans">Soybeans</option>
+                <option value="potatoes">Potatoes</option>
+            </select>
+            <button type="submit">Get Insights</button>
+        </form>
+        
+        <div id="weather-info">Weather</div>
+        <div id="crop-info">Crop</div>
+        <img id="crop-image" src="assessets/image/crop.webp" alt="Crop Image" />
+        <div id="suitability-info">Suitabilty</div>
+        <div id="planting-advice">Planting Advice</div>
+       
+        
+    </section>
+    <footer>
+      <p> ALL RIGHTS RESERVED BY &copy; 2024 Cropzy.</p>
+    </footer>
+</body>
+</html>

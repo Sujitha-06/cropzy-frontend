@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agriculture Dashboard</title>
+    <link rel="icon" href="images/Logo.png">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <section class="sidebar">
+            <div class="profile" id="profile" onclick="toggleDropdown()">
+                <img src="images/login-avathar.png" alt="User Profile" class="profile-img" width="100px">
+                <div class="dropdown-content" id="dropdown">
+                    <p>User Name</p>
+                    <p onclick="openLogout()"><i style="font-size:15px" class="fa"> &#xf090; </i> Logout</p>
+                </div>
+            </div>
+            <div class="rows-container">
+                <div class="row" id="camera" onclick="openCamera()"><i class="fas fa-camera"></i> Camera</div>
+                <div class="rowcrop" id="crops" onclick="openCrops()"><i class="fas fa-seedling"></i> Crops</div>
+                <div class="rowcrop" id="crops" onclick="openSeeds()"><i class="fas fa-seedling"></i> Seeds</div>
+                <div class="row" id="crop-insurance" onclick="openInsurance()"><i class="fas fa-shield-alt"></i> Crop Insurance</div>
+                <div class="rowcrop" id="fertilizers" onclick="openFertilizers()"><i class="fas fa-leaf"></i> Fertilizers</div>
+                <div class="rowcrop" id="agricultural-tools" onclick="openTools()"><i class="fas fa-tools"></i> Agricultural Tools</div>
+                <div class="rowcrop" id="crops" onclick="openOrganicProducts()"><i class="fas fa-leaf"></i>Organic Products</div>
+            </div>
+        </section>
+        <section class="content">
+            <h1 class="cropzy-heading">CROPZY</h1>
+            <div class="info">
+                <h2>Welcome to CROPZY!</h2>
+                <p>Your one-stop solution for all agricultural needs. We provide resources, tools, and information to help you grow your crops efficiently.</p>
+                <h3>Latest Updates</h3>
+                <ul>
+                    <li>New pest control methods that are eco-friendly.</li>
+                    <li>Seasonal planting guide for optimal yields.</li>
+                    <li>Best practices for crop rotation and soil health.</li>
+                </ul>
+                <h3>Featured Products</h3>
+                <div class="product">
+                    <h4>Organic Fertilizer</h4>
+                    <p>Enhance your soil health with our 100% organic fertilizer.</p>
+                </div>
+                <div class="product">
+                    <h4>High-Quality Seeds</h4>
+                    <p>Choose from a variety of seeds tailored for your local climate.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>All rights reserved by CROPZY 2024</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="menu.js"></script>
+    <script src="chat.js"></script> <!-- Include the chat functionality -->
+</body>
+</html>

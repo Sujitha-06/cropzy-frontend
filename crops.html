@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="crop.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Buy Fresh Fruits</h1>
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Strawberry product -->
+        <div class="product">
+            <img src="cropimages/2.jpg" alt="Strawberries">
+            <div class="product-info">
+                <h2>Fresh Strawberries</h2>
+                <p>Price: $5.99 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Fresh Strawberries')">+ Add to Cart</button>
+        </div>
+
+        <!-- Orange product -->
+        <div class="product">
+            <img src="cropimages/4.jpg" alt="Oranges">
+            <div class="product-info">
+                <h2>Juicy Oranges</h2>
+                <p>Price: $4.49 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Juicy Oranges')">+ Add to Cart</button>
+        </div>
+
+        <!-- Cranberry product -->
+        <div class="product">
+            <img src="cropimages/cranberry.jpg" alt="Cranberries">
+            <div class="product-info">
+                <h2>Organic Cranberries</h2>
+                <p>Price: $6.99 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Organic Cranberries')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <h1 class="header">Buy Millet</h1>
+    <div class="container">
+        <!-- Corn Seeds product -->
+        <div class="product">
+            <img src="cropimages/kambu.jpg" alt="Pearl Millets">
+            <div class="product-info">
+                <h2>Pearl Millet(kambu)</h2>
+                <p>Price: $3.99 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Corn Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Tomato Seeds product -->
+        <div class="product">
+            <img src="cropimages/RAGI.webp" alt="ragi">
+            <div class="product-info">
+                <h2>Finger millets(Ragi)</h2>
+                <p>Price: $2.99 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Tomato Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Lettuce Seeds product -->
+        <div class="product">
+            <img src="cropimages/sorgummillet1.webp" alt="sunflower Seeds">
+            <div class="product-info">
+                <h2>Sorgam millets(solam)</h2>
+                <p>Price: $3.49 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Lettuce Seeds')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal" style="display: none;">
+        <h3>Your Cart</h3>
+        <ul id="cart-items-modal">
+            <!-- Cart items will be added here -->
+        </ul>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+
+    <script src="crop.js"></script>
+</body>
+</html>

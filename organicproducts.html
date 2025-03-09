@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit Shop</title>
+    <link rel="stylesheet" href="crop.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>BUY ORGANIC PRODUCTS</h1>
+        <div class="cart-container">
+            <div class="cart-items" id="cart-items"></div>
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-count" id="cart-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Strawberry product -->
+        <div class="product">
+            <img src="cropimages/cocnut shell.jpg" alt="cocnutShell">
+            <div class="product-info">
+                <h2>Coconut Shell</h2>
+                <p>Price: $5.99 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Fresh Strawberries')">+ Add to Cart</button>
+        </div>
+
+        <!-- Orange product -->
+        <div class="product">
+            <img src="cropimages/doops.jpg" alt="doops">
+            <div class="product-info">
+                <h2>Cow Dung Doops</h2>
+                <p>Price: $4.49 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Juicy Oranges')">+ Add to Cart</button>
+        </div>
+
+        <!-- Cranberry product -->
+        <div class="product">
+            <img src="cropimages/diya.jpg" alt="Diya">
+            <div class="product-info">
+                <h2>Cowdung Diya</h2>
+                <p>Price: $6.99 per lb</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Organic Cranberries')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Corn Seeds product -->
+        <div class="product">
+            <img src="cropimages/rose petals.jpg" alt="rosepetals">
+            <div class="product-info">
+                <h2>Rosepetals</h2>
+                <p>Price: $3.99 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Corn Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Tomato Seeds product -->
+        <div class="product">
+            <img src="cropimages/Neemstick.jpg" alt="Neemstick">
+            <div class="product-info">
+                <h2>Neemstick</h2>
+                <p>Price: $2.99 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Tomato Seeds')">+ Add to Cart</button>
+        </div>
+
+        <!-- Lettuce Seeds product -->
+        <div class="product">
+            <img src="cropimages/dry cow dung.webp" alt="dry cow dung">
+            <div class="product-info">
+                <h2>Dry Cow Dung</h2>
+                <p>Price: $3.49 per packet</p>
+            </div>
+            <button class="cart-button" onclick="addToCart('Lettuce Seeds')">+ Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal" style="display: none;">
+        <h3>Your Cart</h3>
+        <ul id="cart-items-modal">
+            <!-- Cart items will be added here -->
+        </ul>
+        <button class="close-btn" onclick="toggleCart()">Close</button>
+    </div>
+
+    <script src="crop.js"></script>
+</body>
+</html>

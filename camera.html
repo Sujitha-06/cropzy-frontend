@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" href="camera.css">
+</head>
+<body>
+    <h1>Plant Disease Detection</h1>
+
+    <!-- Option 1: Live Camera Feed -->
+    <h2>Live Camera Feed</h2>
+    <video id="cameraFeed" autoplay playsinline></video><br>
+    <button id="captureButton">Capture Image</button>
+
+    <!-- Option 2: Upload Image from Device -->
+    <h2>Upload from Device</h2>
+    <input type="file" id="uploadImage" accept="image/*">
+
+    <!-- Canvas to display the captured/uploaded image -->
+    <canvas id="previewCanvas"></canvas>
+    
+    <!-- Button to analyze the image -->
+    <button id="analyzeButton">Analyze Plant</button>
+    
+    <!-- Div to display the results -->
+    <div id="result">
+        <h3>Results:</h3>
+        <p>No image analyzed yet.</p>
+    </div>
+
+    <script src="camera.js"></script>
+</body>
+</html>
