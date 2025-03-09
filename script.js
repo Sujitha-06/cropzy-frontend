@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const cropImage = document.getElementById("crop-image");
   const suitabilityInfo = document.getElementById("suitability-info");
   const plantingAdvice = document.getElementById("planting-advice");
+  const API_URL = "https://cropzy-backend-3.onrender.com"
   
   // Crop details including images and descriptions
   const cropDetails = {
@@ -78,7 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     try {
       // Make a request to the backend API
-      const response = await fetch(`http://localhost:3000/insights?location=${encodeURIComponent(location)}&crop=${encodeURIComponent(crop)}`);
+      const response = await fetch(`${API_URL}?location=${encodeURIComponent(location)}&crop=${encodeURIComponent(crop)}`);
 
       if (!response.ok) {
         throw new Error("Failed to fetch insights");
